@@ -1,5 +1,4 @@
-tkinter
-random
-dataclasses
-enum
-typing
+matplotlib>=3.5.0
+numpy>=1.21.0
+# Note: tkinter is usually included with Python standard library
+# random, dataclasses, enum, typing are all part of Python standard library

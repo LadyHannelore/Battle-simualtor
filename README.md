@@ -4,15 +4,20 @@ A comprehensive tactical battle simulator implementing detailed warfare mechanic
 
 ## Features
 
-### Land Battles
-- **Brigade Types**: Cavalry, Heavy Infantry, and Light Infantry with unique combat bonuses
-- **Enhancements**: 18+ specialized enhancements for different brigade types
-- **General System**: 20 unique general traits affecting army performance
-- **Terrain Effects**: 8 different terrain types with unique combat modifiers
-- **Multi-Phase Combat**: Skirmish, Pitch, and Rally phases with tactical depth
-- **Army Management**: Create and manage armies with multiple brigades
+### 🎨 Enhanced GUI (New!)
+- **Colorful Battle Visualization**: Real-time charts and graphs
+- **Analytics Dashboard**: Comprehensive battle statistics
+- **Mass Simulation**: Run thousands of battles with progress tracking
+- **Visual Army Builder**: Interactive army composition tools
+- **Export Capabilities**: Save battle data and analytics
 
-### Naval Battles
+### ⚔️ Core Battle System
+- **Land & Naval Combat**: Two distinct battle systems
+- **Realistic Terrain Effects**: 8 terrain types affecting combat
+- **Multi-Phase Combat**: Skirmish, Pitch Battle, Rally, and Action Report phases
+- **Complex Dice Mechanics**: D6-based resolution with multiple modifiers
+
+### 🏗️ Army & Fleet Management
 - **Ship Combat**: Individual ship-to-ship battles with range mechanics
 - **Admiral System**: 10 unique admiral traits for fleet bonuses
 - **Ship Enhancements**: Specialized upgrades for firepower, speed, and defense
@@ -35,11 +40,48 @@ git clone https://github.com/LadyHannelore/Battle-simualtor.git
 cd Battle-simualtor
 ```
 
-2. Ensure you have Python 3.6+ installed with tkinter support
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-3. Run the application:
+3. Ensure you have Python 3.6+ installed with tkinter support
+
+## Running the Simulator
+
+### 🎨 Enhanced GUI (Recommended)
+For the full experience with colorful graphs and analytics:
+```bash
+python enhanced_gui.py
+```
+
+### 🖥️ Basic GUI
+For the original interface:
 ```bash
 python main.py
+```
+
+### ⚡ Large-Scale Analysis
+For 1000+ battle statistical analysis:
+```bash
+python battle_analyzer.py
+```
+
+### 🎲 Quick Battles
+For immediate battle action without the GUI:
+```bash
+python quick_battle.py
+```
+
+This launches an interactive menu for:
+- Random land battles
+- Random naval battles 
+- Campaign simulations (5-10 battles)
+- All with randomly generated armies and scenarios
+
+For testing the battle mechanics:
+```bash
+python test_simulator.py
 ```
 
 ## Usage
@@ -102,6 +144,8 @@ Battle-simualtor/
 │   ├── battle_engine.py # Combat simulation logic
 │   └── static/          # Static assets (empty)
 ├── main.py              # Application launcher
+├── quick_battle.py      # CLI battle generator
+├── test_simulator.py    # Test suite
 ├── requirements.txt     # Python dependencies
 └── README.md           # This file
 ```
