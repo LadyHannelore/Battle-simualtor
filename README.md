@@ -6,10 +6,14 @@ A comprehensive tactical battle simulator implementing detailed warfare mechanic
 
 ### 🎨 Enhanced GUI (New!)
 - **Colorful Battle Visualization**: Real-time charts and graphs
-- **Analytics Dashboard**: Comprehensive battle statistics
+- **Analytics Dashboard**: Comprehensive battle statistics  
 - **Mass Simulation**: Run thousands of battles with progress tracking
 - **Visual Army Builder**: Interactive army composition tools
+- **Custom Army Creation**: Build armies with any composition of Heavy, Light, and Cavalry
+- **Army Management System**: Save, load, delete, and export custom armies
+- **Flexible Battle Setup**: Use random armies or select from saved custom armies
 - **Export Capabilities**: Save battle data and analytics
+- **Error-Free Plotting**: Robust visualization with warning suppression
 
 ### ⚔️ Core Battle System
 - **Land & Naval Combat**: Two distinct battle systems
@@ -67,6 +71,16 @@ For 1000+ battle statistical analysis:
 python battle_analyzer.py
 ```
 
+For quick command-line analysis without prompts:
+```bash
+python quick_analysis.py 5000 8
+```
+
+For piped input automation:
+```bash
+echo "2" | python battle_analyzer.py
+```
+
 ### 🎲 Quick Battles
 For immediate battle action without the GUI:
 ```bash
@@ -87,15 +101,39 @@ python test_simulator.py
 ## Usage
 
 ### Getting Started
-1. Launch the application using `python main.py`
+1. Launch the application using `python enhanced_gui.py` (recommended) or `python main.py`
 2. The simulator comes with pre-created sample armies and fleets
 3. Navigate between tabs to manage forces or simulate battles
+4. **New!** Use the Custom Army Builder to create armies with exact compositions
+5. Choose between random armies or your custom saved armies for battles
 
 ### Army Management
 1. Go to the "Army Management" tab
 2. Create new armies by specifying general name and brigade count
 3. Armies are automatically assigned random traits and brigade types
 4. View army details in the list display
+
+### Custom Army Builder
+1. Go to the "🏗️ Custom Army Builder" tab
+2. Configure your general with name, level, and trait
+3. Set exact brigade composition using sliders or +/- buttons:
+   - **Heavy Infantry**: Defensive units with high armor
+   - **Light Infantry**: Fast, versatile units
+   - **Cavalry**: Mobile units with high damage
+4. Use quick presets for common army types:
+   - Heavy Defense (8H, 1L, 1C)
+   - Light Assault (1H, 8L, 1C) 
+   - Cavalry Charge (2H, 2L, 6C)
+   - Balanced Force (3H, 3L, 2C)
+5. Save your custom army for later use
+6. Load, delete, or export saved armies as needed
+
+### Using Custom Armies in Battle
+1. In the "🗡️ Battle Simulator" tab
+2. Select "🏗️ Custom Armies" mode instead of "🎲 Random Armies"
+3. Choose your custom armies from the Red Army and Blue Army dropdowns
+4. Click "🔄 Refresh Army List" to update available armies
+5. Simulate battles with your exact army compositions
 
 ### Fleet Management
 1. Go to the "Fleet Management" tab
